@@ -1,0 +1,11 @@
+# Local fragments and repository-relative paths are validated.
+include_fragments = true
+exclude_mail = true
+max_retries = 2
+timeout = 20
+accept = [200, 204, 206, 429]
+exclude = [
+  "^http://10\\.10\\.10\\.30/",
+  "^http://helpdesk\\.<lab-dns-name>/",
+  "^http://127\\.0\\.0\\.1(?:[:/]|$)"
+]

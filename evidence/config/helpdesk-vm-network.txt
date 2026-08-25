@@ -1,0 +1,8 @@
+# Captured 2026-08-23T08:09:40-07:00 on the Windows host.
+# Command: VBoxManage showvminfo helpdesk --machinereadable
+name="helpdesk"
+VMState="poweroff"
+nic1="none"
+intnet2="intnet"
+cableconnected2="on"
+nic2="intnet"

@@ -1,0 +1,8 @@
+config:
+  default: true
+  MD013: false  # Long evidence tables and exact commands are intentional.
+  MD033: false  # Permit existing HTML where needed by rendered documentation.
+  MD041: false  # Files may begin with a scoped notice before a heading.
+globs:
+  - "**/*.md"
+  - "!.git/**"

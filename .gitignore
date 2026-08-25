@@ -1,0 +1,83 @@
+# Operating-system and editor noise
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.secret
+*.secrets
+*credentials*
+*credential*
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.kdbx
+id_rsa*
+id_ed25519*
+secrets/
+private/
+
+# Database exports and backups
+*.sql
+*.sql.gz
+*.dump
+*.dmp
+*.bak
+*.backup
+backups/
+
+# Logs, traces, and temporary files
+*.log
+*.trace
+*.tmp
+*.temp
+*.cache
+logs/
+tmp/
+
+# VM disks, snapshots, appliance exports, and runtime state
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.qcow
+*.qcow2
+*.ova
+*.ovf
+*.mf
+*.sav
+*.vbox
+*.vbox-prev
+*.nvram
+Snapshots/
+VirtualBox VMs/
+
+# Raw/unreviewed evidence and packet captures
+raw-evidence/
+evidence/raw/
+evidence/unredacted/
+unredacted/
+*.pcap
+*.pcapng
+*.cap
+*.etl
+*.evtx
+*.har
+
+# Archives may contain dumps, VM images, or raw evidence
+*.7z
+*.rar
+*.tar
+*.tgz
+*.tar.gz
+*.zip
