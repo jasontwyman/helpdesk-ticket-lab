@@ -399,9 +399,9 @@ make a cleanup claim.
 After review identified that an onboarding credential had been published and that the
 cross-department membership was still standing, DC01 was remediated directly: the exposed
 `kross` credential was reset through an undisclosed `SecureString` variable, `kross` was
-disabled, and `nalvarez` was removed from `SG-Finance`. The evidence proves the reset command
-and final queried state; it does not independently prove how the replacement value was
-generated. See
+disabled, and `nalvarez` was removed from `SG-Finance`. The evidence shows the reset invocation
+without a visible error and the final queried state; it does not independently verify the
+replacement value or how it was generated. See
 `evidence/screenshots/18-ad-remediation-cleanup.png`.
 
 This cleanup verifies the final directory state only. It does not prove a secure onboarding

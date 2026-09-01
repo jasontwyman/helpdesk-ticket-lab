@@ -111,8 +111,9 @@ of every action.
   present. The proposed remediation is therefore unverified.
 * **Narrative outcomes are not osTicket workflow states.** The case documents may describe an
   intended resolution or escalation, while the captured osTicket records remain Open and
-  Unassigned. The screenshots do not prove assignment, replies sent, escalation, closure, or
-  SLA completion.
+  Unassigned. One detail capture shows response metadata but not its content or author; the
+  screenshots do not prove that the Markdown communication templates were sent, nor do they prove
+  assignment, escalation, closure, or SLA completion.
 * **Illustrative scenarios are not executed incidents.** HD-005 through HD-007 demonstrate
   analysis and documentation only. They do not prove operation of a VPN, MFA provider,
   malware-analysis process, mail gateway, or Security team handoff.
@@ -120,8 +121,9 @@ of every action.
   cover every step or establish production readiness.
 * **Post-review cleanup changed live AD state.** The exposed onboarding credential was reset
   using an undisclosed `SecureString` value, `kross` was disabled, and `nalvarez` was removed
-  from `SG-Finance`. Screenshot 18 proves the reset command and final queried account/group
-  state, but not the replacement value's generation method.
+  from `SG-Finance`. Screenshot 18 shows the reset invocation without a visible error and the
+  final queried account/group state, but it does not independently verify the replacement value
+  or its generation method.
 * **Lab hardening is incomplete.** HTTPS, a documented host-firewall policy, tested backups and
   restores, monitoring, and production secret management were not implemented or evidenced.
   They are listed in the build guide as production-hardening follow-up, not completed controls.

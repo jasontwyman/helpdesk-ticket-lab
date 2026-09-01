@@ -91,10 +91,10 @@ Post-review remediation was executed on DC01:
 2. `kross` was disabled.
 3. The temporary `nalvarez` Finance membership from HD-003 was also removed during cleanup.
 
-The preserved screenshot proves the reset command ran and shows `kross` with `Enabled = False`;
-it does not independently prove how the undisclosed value was generated. Before any future enablement, IT must set a
-new approved temporary credential, restore `ChangePasswordAtLogon = True`, and complete a secure
-handoff without recording the value.
+The preserved screenshot shows the reset invocation without a visible error and shows `kross`
+with `Enabled = False`; it does not independently verify the replacement value or how it was
+generated. Before any future enablement, IT must set a new approved temporary credential, restore
+`ChangePasswordAtLogon = True`, and complete a secure handoff without recording the value.
 
 *(Evidence: `evidence/screenshots/18-ad-remediation-cleanup.png`)*
 

@@ -44,8 +44,10 @@ Sarah Connor  sconnor           True      True             5
 *(Evidence: `evidence/screenshots/05-account-locked-out.png`)*
 
 **2. Find where the lockout came from.** The domain controller records Security Event ID 4740
-when an account is locked. Parse the event XML by field name rather than relying on a positional
-`Properties[]` index, whose ordering is easy to misinterpret:
+when an account is locked. The retained screenshot used positional `Properties[0]` and
+`Properties[1]` projections to label the target and caller. Because positional ordering is easy
+to misinterpret, treat that capture as a display of the selected event rather than robust parser
+provenance. For repeatable analysis, parse the event XML by field name:
 
 ```powershell
 $event = Get-WinEvent -FilterHashtable @{LogName='Security';Id=4740} -MaxEvents 1
@@ -66,7 +68,8 @@ LockedAccount  : sconnor
 SourceComputer : DC01
 ```
 
-*(Evidence: `evidence/screenshots/06-lockout-source-event-4740.png`.)*
+*(Evidence: `evidence/screenshots/06-lockout-source-event-4740.png`; the screenshot preserves the
+older positional projection, while the safer named-field parser is documented above.)*
 
 ## Root cause
 
