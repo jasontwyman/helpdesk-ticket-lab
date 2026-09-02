@@ -1,16 +1,16 @@
 # Help Desk & IT Support Lab — osTicket + Active Directory
 
-A portfolio lab for documenting service-desk investigation, communication, escalation, and
-basic administration with a self-hosted osTicket instance and an existing Active Directory
-lab.
+A self-hosted support environment combining osTicket with an isolated Active Directory lab.
+The project demonstrates service-desk investigation, ticket documentation, user communication,
+escalation judgment, account administration, and reusable troubleshooting guidance.
+
+The completed portfolio package includes seven synthetic ticket records, five knowledge-base
+runbooks, three executed Active Directory support exercises, a verification matrix, and an
+artifact-level evidence manifest.
 
 > **Privacy and scope:** every person, name, account, message, and ticket in this repository is
 > synthetic and exists only for the lab. No production user, customer, or help-desk data is
 > included.
-
-The repository contains exactly **three executed Active Directory exercises**, **one Group Policy
-configuration diagnostic**, and **three illustrative support scenarios**. It separates executed
-work from case-study reasoning so that every claim stays within the available evidence.
 
 For a fast review, use the one-page **[verification matrix](docs/verification-matrix.md)**. For
 artifact-level provenance, hashes, and limitations, use the complete **[evidence
