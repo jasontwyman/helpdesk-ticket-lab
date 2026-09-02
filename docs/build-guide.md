@@ -20,8 +20,9 @@ narratives into live incidents.
   required; do not assume every future 24.04 install returns the same patch release.
 * **Prerequisite:** `DC01` and DNS for `jtwyman.test` already operate on VirtualBox internal
   network `intnet` at `10.10.10.10/24`.
-* **Client boundary:** a Windows 11 client is pending/not used by this repository. Do not claim
-  domain join or client-side GPO application without separate endpoint evidence.
+* **Client boundary:** the companion Active Directory repository now has separate Windows 11
+  domain-join and client-policy evidence. This guide does not treat that later `H:`/`tuser`
+  validation as retroactive proof of the synthetic HD-004 `S:`/`mlee` ticket.
 
 This is a lab build, not a production deployment. HTTPS, a documented host-firewall policy,
 backups/restore testing, monitoring, mail delivery, and enterprise secret management are
@@ -38,7 +39,8 @@ DC01 / AD DS + DNS                    helpdesk / osTicket
 10.10.10.10                           10.10.10.30
 (existing prerequisite)              (built by this guide)
 
-Windows 11 endpoint: pending/not used as evidence
+Windows 11 endpoint: validated in the companion AD repository; not used as
+retroactive evidence for this repository's original HD-004 ticket narrative
 ```
 
 The helpdesk VM starts with two adapters:

@@ -38,7 +38,8 @@ manifest](evidence/README.md)**.
   │ 10.10.10.10              │       │ osTicket / 10.10.10.30   │
   └──────────────────────────┘       └───────────────────────────┘
 
-  Windows 11 client: planned/pending; not used as evidence in this repository.
+  Windows 11 client: now validated in the companion Active Directory repository;
+  not retroactively treated as evidence for the original HD-004 ticket narrative.
 ```
 
 * The observed lab build used **osTicket 1.18.4** on **Ubuntu Server 24.04 LTS** with
@@ -51,8 +52,9 @@ manifest](evidence/README.md)**.
 * The final host-side VirtualBox query reports `nic1="none"`, `nic2="intnet"`, and
   `intnet2="intnet"`; the sanitized output is preserved in
   [`evidence/config/helpdesk-vm-network.txt`](evidence/config/helpdesk-vm-network.txt).
-* A Windows 11 endpoint is intentionally not shown as domain joined because this repository
-  does not contain evidence proving that state or client-side GPO application.
+* The companion Active Directory repository now contains Windows 11 domain-join, secure-channel,
+  mapped-drive, and client-policy evidence. HD-004 remains a configuration diagnostic because its
+  synthetic `S:`/`mlee` case was not the same executed `H:`/`tuser` validation sequence.
 
 For the reproducible **osTicket portion**, assuming the AD lab already exists, see the
 **[build guide](docs/build-guide.md)**.
